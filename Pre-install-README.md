@@ -61,8 +61,6 @@ Search for the following extensions and click Install for each:
 <br>Python (if we are using Python in this course).
 <br>GitLens (helps with Git version control).
 
-# Setting Up the Terminal in VS Code
-
 ## Step 4: Setting Up the Terminal in VS Code
 
 ### For Windows Users:
