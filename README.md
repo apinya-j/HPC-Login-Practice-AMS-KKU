@@ -1,9 +1,9 @@
-# Practical Skills in Using Server, HPC, and Cloud for Bioinformatics
+# Practical Skills in Using Server and HPC
 
 ## Overview
 In this practical guide, you will learn how to log in to an HPC server using various methods, including:
 - SSH (for macOS/Linux)
-- PuTTY (for Windows)
+- PuTTY or X2Go (for Windows)
 - Visual Studio Code (VS Code) with the Remote-SSH extension
 
 By the end of this guide, you should be able to securely connect to an HPC server and begin running bioinformatics tasks.
@@ -11,9 +11,9 @@ By the end of this guide, you should be able to securely connect to an HPC serve
 ### Step 1: Access via SSH from macOS/Linux
 1. Open the **Terminal**.
 2. Run the following command to log in:
-   ```
-   ssh <username>@<HPC-server-address>
-   ```
+```
+ssh <username>@<HPC-server-address>
+```
 Note: Replace <username> with your actual username and <HPC-server-address> with the server address provided.  
 3. You will be prompted for your password. Enter it to complete the login.  
 4. Verify Login:
@@ -82,3 +82,4 @@ If you encounter issues while logging in:
 <br>Ensure that your firewall is not blocking SSH access.
 <br>Make sure you have installed the correct tools (e.g., PuTTY, Git for Windows, or SSH keys).
 <br>Contact the system administrator if you cannot log in after following the instructions.
+
