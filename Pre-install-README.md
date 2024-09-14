@@ -104,5 +104,24 @@ If you run into any issues while installing or setting up **VS Code**, feel free
 
 ---
 
-Thank you for setting up your environment ahead of time!
+# Cloning the Repository into VS Code
+
+Before starting with the exercises, you need to clone the repository that contains the teaching material for this module.
+
+## Steps to Clone the Repository:
+
+1. **Open VS Code**.
+2. **Open the Command Palette**:
+   - Press `Ctrl + Shift + P` (Windows) or `Cmd + Shift + P` (macOS).
+3. **Search for `Git: Clone`** and select it.
+4. **Enter the repository URL**:
+   - You will be prompted to enter the **GitHub repository URL**. Use the URL that the instructor provided (example below):
+     ```bash
+     https://github.com/apinya-j/HPC-Login-Practice-AMS-KKU.git
+     ```
+5. **Choose a folder** on your local machine where you want to clone the repository.
+6. After the clone is complete, **open the cloned folder** in VS Code when prompted.
+
+Now you are ready to proceed with the exercises in **Module 1**.
+
 
