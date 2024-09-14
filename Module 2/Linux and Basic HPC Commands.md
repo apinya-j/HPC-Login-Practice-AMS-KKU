@@ -121,3 +121,65 @@ You can simulate cancelling a job using the following command:
 ```bash
 echo "Job 101 has been cancelled"
 ```
+# Practical Exercises
+
+## Exercise 1: File Management
+
+1. Log into the server (simulated in your local machine using VS Code).
+2. Navigate to your cloned repository and create a directory called `linux_practice`:
+   ```bash
+   mkdir linux_practice
+   ```
+3. Inside the `linux_practice` directory, create a text file called exercise.txt:
+```bash   
+touch exercise.txt
+```
+4. Add your full name to `exercise.txt`
+```
+echo "My name is [Your Name] and my favorite programming language is [Language]" > exercise.txt
+```
+5. Copy the file to another location, rename it to `backup.txt`, and delete the original:
+```
+cp exercise.txt backup.txt
+rm exercise.txt
+```
+6. List all files in the directory to verify your work:
+```
+ls -l
+```
+# Exercise 2: Basic HPC Simulation
+
+In this exercise, you will simulate the submission of an HPC job using a shell script. Follow the steps below to create and submit the job script, simulate checking the job status, and view the job's output.
+
+## Instructions
+
+```bash
+# Step 1: Create a simple job script called testjob.sh
+echo -e "#!/bin/bash\n\necho Hello, HPC! > output.txt" > testjob.sh
+
+# Step 2: Simulate submitting the job
+sbatch testjob.sh
+
+# Step 3: Check the status of the job (simulating the squeue command)
+echo "Checking job status... Job ID: 202, Status: Completed"
+
+# Step 4: View the contents of output.txt after the job is completed
+cat output.txt
+```
+# Post-Lab Quiz
+After completing the exercises, answer the following questions and submit your answers:
+
+1. What command do you use to create a new directory?
+2. How can you view the contents of a file in Linux?
+3. What does the pwd command do?
+4. What is the purpose of the sbatch command in HPC?
+5. How can you check the status of a job in an HPC environment?
+
+## Submission Instructions:
+Complete the exercises and write your answers to the quiz in a file called `quiz_answers.<your full name>.txt`.
+Submit your quiz_answers.txt file via the [Onedrive)](https://khonkaenuniversity-my.sharepoint.com/:f:/g/personal/apinjus_kku_ac_th/EqZaaIfr-8JCi7_Mf0xi5bAB0VDQUl10ycl8tny3KxJfdg?e=iXFeyU).
+
+## Support
+If you run into any issues during this module, feel free to reach out to the instructor or teaching assistant for help. You can also refer to the official Linux or HPC documentation for further assistance.
+
+Thank you for setting up your environment ahead of time!
