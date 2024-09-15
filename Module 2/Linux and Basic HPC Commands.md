@@ -33,7 +33,7 @@ You will be using **VS Code’s integrated terminal** to practice these commands
 
 ### a. File and Directory Management
 
-1. **Open the integrated terminal in VS Code**:
+1. **Open the integrated terminal in VS Code**: SKIP THIS step
    - Press `Ctrl + \`` (backtick) on Windows or `Cmd + \`` on macOS.
 
 2. **Check your current directory**:
@@ -86,10 +86,24 @@ You will be using **VS Code’s integrated terminal** to practice these commands
      ```bash
      rm mynewfile.txt
      ```
+10. **Copy a file from your local machine to the server**
+Transfer files using SCP (Secure Copy Protocol), a command that allows them to securely move files between their local machine and the server.
+```bash
+     scp -i /path/to/your-key.pem /local/path/to/file <username>@<server-IP>:/home/<username>/practice/
+```
+11. After copying the file, verify its existence on the server or your local machine using the ls command:
 
+12. Check disk space usage:
+```bash
+     df -h
+```
+13. Check running processes:
+```bash
+     top
+```
 ---
 
-## 3. Simulating Basic HPC Commands (Locally)
+## 3. Simulating Basic HPC Commands (Locally) >SKIP This Step<
 
 Although you are working on your local computer, we can simulate some HPC-related commands and workflows.
 
@@ -126,7 +140,7 @@ echo "Job 101 has been cancelled"
 ## Exercise 1: File Management
 
 1. Log into the server (simulated in your local machine using VS Code).
-2. Navigate to your cloned repository and create a directory called `linux_practice`:
+2. Create a directory called `linux_practice`:
    ```bash
    mkdir linux_practice
    ```
@@ -148,32 +162,17 @@ rm exercise.txt
 ls -l
 ```
 # Exercise 2: Basic HPC Simulation
-
-In this exercise, you will simulate the submission of an HPC job using a shell script. Follow the steps below to create and submit the job script, simulate checking the job status, and view the job's output.
-
-## Instructions
-
-```bash
-# Step 1: Create a simple job script called testjob.sh
-echo -e "#!/bin/bash\n\necho Hello, HPC! > output.txt" > testjob.sh
-
-# Step 2: Simulate submitting the job
-sbatch testjob.sh
-
-# Step 3: Check the status of the job (simulating the squeue command)
-echo "Checking job status... Job ID: 202, Status: Completed"
-
-# Step 4: View the contents of output.txt after the job is completed
-cat output.txt
+Task 1: File Transfer and Management:
+1. Transfer a text file from your local machine to the server using SCP.
+2. On the server, create a directory structure:
 ```
-# Post-Lab Quiz
-After completing the exercises, answer the following questions and submit your answers:
+   project/
+    data/
+    scripts/
+    results/
+```
+3. Move the transferred file: "file to be transered" to the data/ folder and rename it to dataset1.txt.
 
-1. What command do you use to create a new directory?
-2. How can you view the contents of a file in Linux?
-3. What does the pwd command do?
-4. What is the purpose of the sbatch command in HPC?
-5. How can you check the status of a job in an HPC environment?
 
 ## Submission Instructions:
 Complete the exercises and write your answers to the quiz in a file called `quiz_answers.<your full name>.txt`.
