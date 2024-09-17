@@ -171,12 +171,15 @@ Task 1: File Transfer and Management:
     scripts/
     results/
 ```
-3. Move the transferred file: "file to be transered" to the data/ folder and rename it to dataset1.txt.
+3. Move the transferred file: "file to be transferred" to the data/ folder and rename it to dataset1.txt.
+4. verify the MD5 checksum of the transferred file and save it to file name "md5.txt" at the current directory.
 
 
 ## Submission Instructions:
-Complete the exercises and write your answers to the quiz in a file called `quiz_answers.<your full name>.txt`.
-Submit your quiz_answers.txt file via the [Onedrive)](https://khonkaenuniversity-my.sharepoint.com/:f:/g/personal/apinjus_kku_ac_th/EqZaaIfr-8JCi7_Mf0xi5bAB0VDQUl10ycl8tny3KxJfdg?e=iXFeyU).
+1. Complete the exercises 1 and Exercise 2.  
+2. Screenshot of your script of every steps and output.
+3. Save your screen shot in word file.
+4. Submit your quiz_answers.txt file via the [Onedrive)](https://khonkaenuniversity-my.sharepoint.com/:f:/g/personal/apinjus_kku_ac_th/EqZaaIfr-8JCi7_Mf0xi5bAB0VDQUl10ycl8tny3KxJfdg?e=iXFeyU).
 
 ## Support
 If you run into any issues during this module, feel free to reach out to the instructor or teaching assistant for help. You can also refer to the official Linux or HPC documentation for further assistance.
